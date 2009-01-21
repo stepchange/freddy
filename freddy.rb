@@ -11,7 +11,7 @@ get '/' do
     elsif params['url'].empty? || params['callback'].empty?
       "#{params['callback']}({'error' : 'Must include a value for both 'url' and 'callback' parameters.'})"
     else
-      Timeout::timeout(15) do 
+      Timeout::timeout(3) do 
         "#{params['callback']}(#{open(params['url']).read})"
       end      
     end
