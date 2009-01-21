@@ -1,0 +1,13 @@
+Once you have deployed Freddy on your own server, access it like this:
+
+    freddy.mydomain.com?url=<uri-encoded json-returning url>&callback=<name of my callback function>
+
+The response will look like this:
+
+    myCallback({'foo' : 'bar'})
+    
+Where myCallback is the value you provided for the 'callback' param and {'foo' : 'bar'} is the json returned by GETting the url you provided to the 'url' param.
+
+Note: Freddy just straight up GETs the url and spits back the result. So, if the result is a HD rip of Berlin Alexanderplatz, then your server will (un-)happily start pulling that down.
+
+Use with caution.
