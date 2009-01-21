@@ -21,9 +21,13 @@ Note: Freddy just straight up GETs the url and spits back the result. So, if the
 There is no security. If you run this, anyone who knows about your Freddy URL will be able to access it for their arbitrary use. Deploy with caution.
 
 JSONP:
+
 http://en.wikipedia.org/wiki/JSON#JSONP
+
 http://remysharp.com/2007/10/08/what-is-jsonp/
+
 http://ajaxian.com/archives/jsonp-json-with-padding
 
 Sinatra:
+
 http://sinatra.github.com
